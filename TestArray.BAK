@@ -1,0 +1,15 @@
+clear
+use ron_foxpro
+
+select count(*)  from ron_foxpro into array RowCount
+?RowCount
+
+select * from ron_foxpro into array laTestArray
+
+for ii = 1 to RowCount
+	for i = 1 to alen(laTestArray,1)
+		?laTestArray(ii,i)
+	next
+next
+
+close database
