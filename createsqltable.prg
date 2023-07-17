@@ -5,15 +5,15 @@ clear
 local connectionString
 connectionString = "Driver={SQL Server};Server=MDM0001L;Database=MDM_Dev;Uid=sa;Pwd=YgPz$123;"
 
-use cldentch
+use classden
 
 *!* Define variables
 local CreateTable,length,DBName
 
-DBName = "cldentch"
+DBName = "classden"
 
 *!* dtart defining SQL Statement
-CreateTable = "create table cldentch("
+CreateTable = "create table classden("
 
 *!*Create loop to add filedls to table
 for ix = 1 to afields(laFieldInfo)
